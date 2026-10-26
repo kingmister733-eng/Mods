@@ -1,0 +1,81 @@
+
+name: Import ZIP from Google Drive
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Mods repository
+        uses: actions/checkout@v4
+
+      - name: Install tools
+        run: |
+          python -m pip install gdown
+          sudo apt-get update
+          sudo apt-get install -y unzip
+
+      - name: Download ZIP
+        run: |
+          gdown --retries 3 \
+            "https://drive.google.com/uc?id=1syfmPGMotBE8dW2Mhb4ew5l_822FtJ9N" \
+            -O archive.zip
+
+          test -s archive.zip
+
+      - name: Extract ZIP
+        run: |
+          mkdir -p imported
+          unzip -o archive.zip -d imported
+
+      - name: Validate files
+        run: |
+          python - <<'PY'
+          import os
+          root = "imported"
+          total = 0
+          count = 0
+          limit = 100 * 1024 * 1024
+
+          for base, dirs, files in os.walk(root):
+              for name in files:
+                  path = os.path.join(base, name)
+                  size = os.path.getsize(path)
+                  total += size
+                  count += 1
+                  if size > limit:
+                      print(f"Too large for normal Git: {path}")
+                      raise SystemExit(1)
+
+          print(f"Files: {count}")
+          print(f"Extracted size: {total / 1024**3:.2f} GiB")
+
+          if total > 1.5 * 1024**3:
+              raise SystemExit(
+                  "Extracted data exceeds the safe push-size threshold."
+              )
+          PY
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add imported
+
+          if git diff --cached --quiet; then
+            echo "No new changes to commit"
+          else
+            git commit -m "Import files from Google Drive ZIP"
+            git push
+          fi
+
+      - name: Cleanup
+        if: always()
+        run: rm -f archive.zip
