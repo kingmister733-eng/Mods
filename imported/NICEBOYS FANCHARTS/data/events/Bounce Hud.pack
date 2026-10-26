@@ -1,0 +1,37 @@
+Bounce Hud.hx________PACKSEP________var bounce:Bool = false;
+var elapsedAdd:Float = 0;
+var distanceY:Float = 5;
+
+var fallingSpeed:Float = 3;
+var speedY:Float = 1;
+
+var bpmToFollow = Conductor.bpm/10;
+function postUpdate(elapsed) {
+    if(bounce) {
+        elapsedAdd += elapsed;
+        speedY += elapsed*(bpmToFollow*5);
+
+        camHUD.y += (fallingSpeed*speedY)*elapsed;
+        if(camHUD.y >= 0) speedY = -30;
+
+        camHUD.angle = Math.cos(elapsedAdd * bpmToFollow / distanceY / 2) * distanceY / 2;
+        camGame.angle = Math.cos(elapsedAdd * 2 / (distanceY / 2)) * (distanceY / 2);
+    } else {
+        camHUD.angle = FlxMath.lerp(camHUD.angle, 0, elapsed);
+        camGame.angle = FlxMath.lerp(camGame.angle, 0, elapsed);
+        camHUD.y = FlxMath.lerp(camHUD.y, 0, elapsed);
+    }
+}
+
+function onEvent(e) if(e.event.name == 'Bounce Hud') {
+    bounce = e.event.params[0];
+    bpmToFollow = Conductor.bpm/10;
+}________PACKSEP________{
+    "params": [
+        {
+            "name": "Bounce?",
+            "type": "Bool",
+            "defaultValue": false
+        }
+    ]
+}________PACKSEP________iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABSUlEQVQ4jZ2Sv0tCcRTFPzdcBGmxQcXlQbrm2tYkBEFTTYVIq1PQIDSGU/QfNERNNQVFgQQuEaSD4WjQEuSgS0uLcRrej57ie1gHvvC9X+45995zv4YHSeIPMDMDSPjkYzcG4L10CkC+u8fBA6wcnQDwcrgf5EiSmRmStElSIi2RVpm62k5HbaejMnVlilXVmiPVmiNlilUlhZJCbK1KkhIA13zRJA9Anx63H05wHw6+ebzvATAcDBg/77otXJ27o4TaCdpz2ADgjRsAEovrAIw/78IjYBZi/dfEWMhDXE4ijtxIZYN7VMWZAj65knPNbKSykSILs8gVs4AMUMk5VLyVT+fbLPK2LQFQWi4A0H3tA3CpIWee+5ECZsaaF18UVgHY6T8B0OJ3fZEe+F2aWVC5FXqfxoSArxy1url2HxKYOFGicf9grmI/Li+00KhtHwgAAAAASUVORK5CYII=

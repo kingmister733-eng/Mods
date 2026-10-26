@@ -1,0 +1,38 @@
+{
+  "version": "2.2.4",
+  "songName": "Config",
+  "artist": "Kawai Sprite",
+  "charter": "Psych Engine Import",
+  "divisions": 16,
+  "looped": false,
+  "playData": {
+    "album": "volume1",
+    "characters": {
+      "player": "bf",
+      "girlfriend": "gf",
+      "opponent": "dad"
+    },
+    "stage": "stage",
+    "noteStyle": "funkin",
+    "ratings": {},
+    "difficulties": [
+      "normal"
+    ]
+  },
+  "timeChanges": [
+    {
+      "t": 0,
+      "b": 0,
+      "bpm": 100,
+      "n": 4,
+      "d": 4,
+      "bt": [
+        4,
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "timeFormat": "ms"
+}

@@ -1,0 +1,2154 @@
+{
+  "modTitle": "niceboys fancharts songpack 1",
+  "sourceEngine": "psych",
+  "targetVersion": "0.8.x",
+  "status": "Requires manual repair",
+  "statistics": {
+    "filesDiscovered": 204,
+    "songsCount": 4,
+    "charactersCount": 2,
+    "stagesCount": 0,
+    "weeksCount": 0,
+    "scriptsCount": 0,
+    "assetsPreserved": 176
+  },
+  "songs": [
+    {
+      "id": "config",
+      "name": "Config",
+      "bpm": 100,
+      "bpmDerived": false,
+      "bpmSource": "fallback-unverified",
+      "difficulties": [
+        "normal"
+      ],
+      "notesCount": 0,
+      "eventsCount": 0,
+      "characters": {
+        "player": "bf",
+        "opponent": "dad",
+        "girlfriend": "gf"
+      },
+      "sourceFiles": [
+        "NICEBOYS FANCHARTS/data/config/discord.json"
+      ]
+    },
+    {
+      "id": "charts",
+      "name": "Charts",
+      "bpm": 100,
+      "bpmDerived": false,
+      "bpmSource": "fallback-unverified",
+      "difficulties": [
+        "normal"
+      ],
+      "notesCount": 0,
+      "eventsCount": 0,
+      "characters": {
+        "player": "bf",
+        "opponent": "dad",
+        "girlfriend": "gf"
+      },
+      "sourceFiles": [
+        "NICEBOYS FANCHARTS/songs/nightly funkin/charts/FUNKY.json",
+        "NICEBOYS FANCHARTS/songs/spooky groovin/charts/FUNKY.json"
+      ]
+    },
+    {
+      "id": "nightly-funkin",
+      "name": "Nightly Funkin",
+      "bpm": 125,
+      "bpmDerived": false,
+      "bpmSource": "chart",
+      "difficulties": [
+        "normal"
+      ],
+      "notesCount": 0,
+      "eventsCount": 0,
+      "characters": {
+        "player": "bf",
+        "opponent": "dad",
+        "girlfriend": "gf"
+      },
+      "sourceFiles": [
+        "NICEBOYS FANCHARTS/songs/nightly funkin/meta.json"
+      ]
+    },
+    {
+      "id": "spooky-groovin",
+      "name": "Spooky Groovin",
+      "bpm": 105,
+      "bpmDerived": false,
+      "bpmSource": "chart",
+      "difficulties": [
+        "normal"
+      ],
+      "notesCount": 0,
+      "eventsCount": 0,
+      "characters": {
+        "player": "bf",
+        "opponent": "dad",
+        "girlfriend": "gf"
+      },
+      "sourceFiles": [
+        "NICEBOYS FANCHARTS/songs/spooky groovin/meta.json"
+      ]
+    }
+  ],
+  "characters": [
+    "animation",
+    "spritemap1"
+  ],
+  "stages": [],
+  "weeks": [],
+  "scripts": [],
+  "diagnostics": [
+    {
+      "level": "warning",
+      "category": "chart",
+      "message": "BPM could not be found or derived from chart or events for \"Config\". A fallback of 100 BPM was assigned and marked as unverified.",
+      "actionNeeded": "Verify and set the song BPM in the generated metadata.json."
+    },
+    {
+      "level": "warning",
+      "category": "chart",
+      "message": "BPM could not be found or derived from chart or events for \"Charts\". A fallback of 100 BPM was assigned and marked as unverified.",
+      "actionNeeded": "Verify and set the song BPM in the generated metadata.json."
+    },
+    {
+      "level": "warning",
+      "category": "chart",
+      "message": "BPM could not be found or derived from chart or events for \"Charts\". A fallback of 100 BPM was assigned and marked as unverified.",
+      "actionNeeded": "Verify and set the song BPM in the generated metadata.json."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Bloom Effect.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Bloom Effect.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/camBounce.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/camBounce.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Camera Angle.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Camera Angle.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/CameraSpeed.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/CameraSpeed.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Change Character.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Change Character.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Change HUD Alpha.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Change HUD Alpha.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/ChangeStage.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/ChangeStage.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Cinematics (Bar).json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Cinematics (Bar).json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Cinematics (HUD).json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Cinematics (HUD).json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Cinematics (Strums).json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Cinematics (Strums).json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Contrast Effect.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Contrast Effect.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Pixel Effect.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Pixel Effect.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/PlaySound.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/PlaySound.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Saturation Effect.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Saturation Effect.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/data/events/Screen Coverer.json",
+      "message": "Standalone events file \"NICEBOYS FANCHARTS/data/events/Screen Coverer.json\" could not be unambiguously paired with a specific song in multi-song pack."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/songs/nightly funkin/events.json",
+      "message": "Parsed 0 standalone events from \"NICEBOYS FANCHARTS/songs/nightly funkin/events.json\" for song \"charts\"."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/songs/nightly funkin/events.json",
+      "message": "Merged 0 external events from \"NICEBOYS FANCHARTS/songs/nightly funkin/events.json\" into song \"Charts\"."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/songs/spooky groovin/events.json",
+      "message": "Parsed 0 standalone events from \"NICEBOYS FANCHARTS/songs/spooky groovin/events.json\" for song \"charts\"."
+    },
+    {
+      "level": "info",
+      "category": "event",
+      "file": "NICEBOYS FANCHARTS/songs/spooky groovin/events.json",
+      "message": "Merged 0 external events from \"NICEBOYS FANCHARTS/songs/spooky groovin/events.json\" into song \"Charts\"."
+    },
+    {
+      "level": "info",
+      "category": "stage",
+      "message": "Mod does not define custom stage JSONs or scripts; default V-Slice stage \"stage\" will be used."
+    },
+    {
+      "level": "info",
+      "category": "metadata",
+      "message": "Standalone songpack detected: Mod contains standalone song charts without story mode weeks. Songs will appear directly in Freeplay."
+    },
+    {
+      "level": "warning",
+      "category": "asset",
+      "message": "Character \"animation\" (animation) references sprite sheet \"images/characters/animation.png\" which was not found in mod assets.",
+      "actionNeeded": "Ensure images/characters/animation.png is included in the mod archive."
+    },
+    {
+      "level": "warning",
+      "category": "asset",
+      "message": "Song \"Config\" does not have an instrumental track \"songs/config/Inst.ogg\".",
+      "actionNeeded": "Provide songs/config/Inst.ogg for playback."
+    },
+    {
+      "level": "warning",
+      "category": "asset",
+      "message": "Song \"Nightly Funkin\" does not have an instrumental track \"songs/nightly-funkin/Inst.ogg\".",
+      "actionNeeded": "Provide songs/nightly-funkin/Inst.ogg for playback."
+    },
+    {
+      "level": "warning",
+      "category": "asset",
+      "message": "Song \"Spooky Groovin\" does not have an instrumental track \"songs/spooky-groovin/Inst.ogg\".",
+      "actionNeeded": "Provide songs/spooky-groovin/Inst.ogg for playback."
+    }
+  ],
+  "manifest": [
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/alphabet.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/alphabet.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/characters/bf-dead.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/characters/bf-dead.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/characters/BOYFRIEND.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/characters/BOYFRIEND.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/characters/GIRLFRIEND.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/characters/GIRLFRIEND.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/characters/NIKKU.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/characters/NIKKU.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/characters/QT DANCE.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/characters/QT DANCE.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/characters/QT.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/characters/QT.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/config/credits.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/config/credits.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/config/menuItems.txt",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/config/menuItems.txt",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/config/modpack.ini",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/config/modpack.ini",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/config/options.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/config/options.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/discord.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/discord.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/editors/layouts/stage/characterEditScreen.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/editors/layouts/stage/characterEditScreen.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Bloom Effect.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Bloom Effect.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Bounce Hud.pack",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Bounce Hud.pack",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/camBounce.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/camBounce.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Camera Angle.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Camera Angle.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/CameraSpeed.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/CameraSpeed.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Change Character.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Change Character.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Change HUD Alpha.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Change HUD Alpha.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/ChangeStage.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/ChangeStage.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Contrast Effect.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Contrast Effect.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Control Character.pack",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Control Character.pack",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Move Strumline.pack",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Move Strumline.pack",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Pixel Effect.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Pixel Effect.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/PlaySound.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/PlaySound.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Saturation Effect.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Saturation Effect.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Screen Coverer.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/events/Screen Coverer.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/freeplaySonglist.txt",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/freeplaySonglist.txt",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/global.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/global.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/notes/Sigh Anim Note.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/notes/Sigh Anim Note.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/notes/Yeah Anim Note.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/notes/Yeah Anim Note.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/specialThanks.txt",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/specialThanks.txt",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/stages/STAKEPARK.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/stages/STAKEPARK.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/stages/testStage.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/stages/testStage.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/states/Charter.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/states/Charter.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/titlescreen/introText.txt",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/titlescreen/introText.txt",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/titlescreen/titlescreen.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/titlescreen/titlescreen.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/weeks/weeks.txt",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/weeks/weeks.txt",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/weeks/weeks/tutorial.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/data/weeks/weeks/tutorial.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/BOYFRIEND.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/characters/BOYFRIEND.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/BOYFRIEND.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/characters/BOYFRIEND.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/dead-bf/spritemap1.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/characters/dead-bf/spritemap1.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/GIRLFRIEND/spritemap1.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/characters/GIRLFRIEND/spritemap1.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/NIKKU.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/characters/NIKKU.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/NIKKU.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/characters/NIKKU.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/QT DANCE/spritemap1.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/characters/QT DANCE/spritemap1.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/QT/spritemap1.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/characters/QT/spritemap1.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/credits/Niceboy.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/credits/Niceboy.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/go.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/go.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/healthBar.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/healthBar.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/notes/default.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/notes/default.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/notes/default.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/notes/default.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/ready.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/ready.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/restart.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/restart.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/bad.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/bad.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/combo.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/combo.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/good.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/good.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num0.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num0.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num1.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num1.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num2.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num2.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num3.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num3.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num4.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num4.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num5.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num5.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num6.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num6.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num7.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num7.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num8.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num8.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/num9.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/num9.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/shit.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/shit.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/score/sick.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/score/sick.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/set.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/set.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/splashes/default.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/splashes/default.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/splashes/default.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/splashes/default.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/splashes/secret.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/splashes/secret.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/game/splashes/secret.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/game/splashes/secret.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/icon.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/icon.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/icons/nikku.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/icons/nikku.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/icons/qt.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/icons/qt.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/mainmenu/donate.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/mainmenu/donate.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/mainmenu/donate.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/mainmenu/donate.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/mainmenu/freeplay.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/mainmenu/freeplay.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/mainmenu/freeplay.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/mainmenu/freeplay.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/mainmenu/options.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/mainmenu/options.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/mainmenu/options.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/mainmenu/options.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/mainmenu/story mode.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/mainmenu/story mode.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/mainmenu/story mode.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/mainmenu/story mode.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/menuBG.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/menuBG.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/menuBGBlue.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/menuBGBlue.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/menuBGMagenta.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/menuBGMagenta.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/menuContrast.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/menuContrast.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/menuDesat.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/menuDesat.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/menuEditors.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/menuEditors.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/menuTransparent.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/menuTransparent.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/options/checkboxThingie.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/options/checkboxThingie.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/options/checkboxThingie.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/options/checkboxThingie.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/bfLol.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/bfLol.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/bfLol.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/bfLol.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/pauseBG.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/pauseBG.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/pauseUI.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/pauseUI.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/pauseUI.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/pauseAlt/pauseUI.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/assets.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/assets.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/assets.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/assets.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/bf.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/bf.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/bf.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/bf.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/dad.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/dad.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/dad.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/dad.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/gf.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/gf.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/gf.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/gf.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/mom.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/mom.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/mom.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/mom.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/parents-christmas.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/parents-christmas.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/parents-christmas.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/parents-christmas.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/pico.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/pico.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/pico.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/pico.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/senpai.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/senpai.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/senpai.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/senpai.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/spooky.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/spooky.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/spooky.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/spooky.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/tankman.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/tankman.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/tankman.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/characters/tankman.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/difficulties/easy.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/difficulties/easy.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/difficulties/hard.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/difficulties/hard.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/difficulties/normal.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/difficulties/normal.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/tutorial.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/tutorial.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week1.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week1.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week2.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week2.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week3.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week3.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week4.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week4.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week5.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week5.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week6.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week6.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week7.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/storymenu/weeks/week7.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/titlescreen/gf.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/titlescreen/gf.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/titlescreen/gf.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/titlescreen/gf.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/titlescreen/logo.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/titlescreen/logo.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/titlescreen/logo.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/titlescreen/logo.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/titlescreen/newgrounds_logo.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/titlescreen/newgrounds_logo.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/titlescreen/titleEnter.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/titlescreen/titleEnter.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/titlescreen/titleEnter.xml",
+      "classifiedType": "atlas",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/titlescreen/titleEnter.xml",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/menus/transitionSpr.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/menus/transitionSpr.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/stages/024/buildings.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/stages/024/buildings.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/stages/024/bushes.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/stages/024/bushes.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/stages/024/floor.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/stages/024/floor.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/stages/024/light.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/stages/024/light.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/stages/024/sky.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/stages/024/sky.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/stages/024/trees.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/stages/024/trees.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/titlecards/nightly funkin/first_thing.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/titlecards/nightly funkin/first_thing.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/titlecards/nightly funkin/second_thing.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/titlecards/nightly funkin/second_thing.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/titlecards/spooky groovin/first_thing.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/titlecards/spooky groovin/first_thing.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/titlecards/spooky groovin/second_thing.png",
+      "classifiedType": "image",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/images/titlecards/spooky groovin/second_thing.png",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/music/gameOver.ogg",
+      "classifiedType": "audio",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/music/gameOver.ogg",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/paths.json",
+      "classifiedType": "metadata",
+      "parsingResult": "success",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/paths.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/shaders/bloom.frag",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/shaders/bloom.frag",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/shaders/ChromaticAbberation.frag",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/shaders/ChromaticAbberation.frag",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/shaders/coloredVignette.frag",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/shaders/coloredVignette.frag",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/shaders/coloredVignette_clip.frag",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/shaders/coloredVignette_clip.frag",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/shaders/pixelate.frag",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/shaders/pixelate.frag",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/shaders/saturation.frag",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/shaders/saturation.frag",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/camera.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/camera.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/CinematicStuff.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/CinematicStuff.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/gameplay.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/gameplay.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/gradient-sustains.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/gradient-sustains.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/no sustain anims.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/no sustain anims.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/titleCard.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/nightly funkin/scripts/titleCard.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/song/Inst.ogg",
+      "classifiedType": "audio",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/nightly funkin/song/Inst.ogg",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/camera.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/camera.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/CinematicStuff.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/CinematicStuff.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/gameplay.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/gameplay.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/gradient-sustains.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/gradient-sustains.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/no sustain anims.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/no sustain anims.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/titleCard.hx",
+      "classifiedType": "other",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/spooky groovin/scripts/titleCard.hx",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/song/inst.ogg",
+      "classifiedType": "audio",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/songs/spooky groovin/song/inst.ogg",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/sounds/gameOverEnd.ogg",
+      "classifiedType": "audio",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/sounds/gameOverEnd.ogg",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/sounds/gameOverSFX.ogg",
+      "classifiedType": "audio",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/sounds/gameOverSFX.ogg",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/sounds/hey.ogg",
+      "classifiedType": "audio",
+      "parsingResult": "n/a",
+      "conversionResult": "copied",
+      "outputPath": "NICEBOYS FANCHARTS/sounds/hey.ogg",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/config/discord.json",
+      "classifiedType": "chart",
+      "targetSongId": "config",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/songs/config/config-chart.json",
+      "warnings": [
+        "BPM could not be found or derived from chart or events for \"Config\". A fallback of 100 BPM was assigned and marked as unverified."
+      ],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/charts/FUNKY.json",
+      "classifiedType": "chart",
+      "targetSongId": "charts",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/songs/charts/charts-chart.json",
+      "warnings": [
+        "BPM could not be found or derived from chart or events for \"Charts\". A fallback of 100 BPM was assigned and marked as unverified."
+      ],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/meta.json",
+      "classifiedType": "chart",
+      "targetSongId": "nightly-funkin",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/songs/nightly-funkin/nightly-funkin-chart.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/charts/FUNKY.json",
+      "classifiedType": "chart",
+      "targetSongId": "charts",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/songs/charts/charts-chart.json",
+      "warnings": [
+        "BPM could not be found or derived from chart or events for \"Charts\". A fallback of 100 BPM was assigned and marked as unverified."
+      ],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/meta.json",
+      "classifiedType": "chart",
+      "targetSongId": "spooky-groovin",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/songs/spooky-groovin/spooky-groovin-chart.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Bloom Effect.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/camBounce.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Camera Angle.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/CameraSpeed.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Change Character.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Change HUD Alpha.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/ChangeStage.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Cinematics (Bar).json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Cinematics (HUD).json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Cinematics (Strums).json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Contrast Effect.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Pixel Effect.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/PlaySound.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Saturation Effect.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/data/events/Screen Coverer.json",
+      "classifiedType": "events",
+      "parsingResult": "success",
+      "conversionResult": "skipped",
+      "warnings": [
+        "Standalone events.json could not be matched with any specific song in the mod."
+      ],
+      "errors": [],
+      "reasonForSkipping": "No matching song directory found"
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/nightly funkin/events.json",
+      "classifiedType": "events",
+      "targetSongId": "charts",
+      "parsingResult": "success",
+      "conversionResult": "merged",
+      "outputPath": "data/songs/charts/charts-chart.json (events)",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/songs/spooky groovin/events.json",
+      "classifiedType": "events",
+      "targetSongId": "charts",
+      "parsingResult": "success",
+      "conversionResult": "merged",
+      "outputPath": "data/songs/charts/charts-chart.json (events)",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/dead-bf/Animation.json",
+      "classifiedType": "character",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/characters/animation.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/dead-bf/spritemap1.json",
+      "classifiedType": "character",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/characters/spritemap1.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/GIRLFRIEND/Animation.json",
+      "classifiedType": "character",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/characters/animation.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/GIRLFRIEND/spritemap1.json",
+      "classifiedType": "character",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/characters/spritemap1.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/QT DANCE/Animation.json",
+      "classifiedType": "character",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/characters/animation.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/QT DANCE/spritemap1.json",
+      "classifiedType": "character",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/characters/spritemap1.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/QT/Animation.json",
+      "classifiedType": "character",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/characters/animation.json",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "sourcePath": "NICEBOYS FANCHARTS/images/characters/QT/spritemap1.json",
+      "classifiedType": "character",
+      "parsingResult": "success",
+      "conversionResult": "converted",
+      "outputPath": "data/characters/spritemap1.json",
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

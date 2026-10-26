@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-stage>
+<stage startCamPosX="1000" startCamPosY="400" folder="Stages/024/" zoom="0.8" name="STAKEPARK">
+	<girlfriend x="944.580535592882" y="360.645873898162"/>
+	<sprite type="none" sprite="sky" name="BACKGROUND"/>
+	<sprite type="none" sprite="buildings" name="BUILDINGS"/>
+	<sprite type="none" sprite="trees" name="TREES"/>
+	<sprite type="none" sprite="floor" name="FOREGROUND"/>
+	<dad scale="0.7" x="312" y="129"/>
+	<boyfriend x="1834.8023337287" y="973.355777457303"/>
+	<sprite type="none" sprite="bushes" name="BUSHES"/>
+	<sprite type="none" sprite="light" name="LIGHTING"/>
+</stage>

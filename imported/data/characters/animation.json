@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "name": "animation",
+  "assetPath": "characters/animation",
+  "renderType": "sparrow",
+  "scale": 1,
+  "singDuration": 4,
+  "flipX": false,
+  "healthIcon": {
+    "id": "animation",
+    "scale": 1,
+    "flipX": false
+  },
+  "healthBarColor": "#31b0d5",
+  "positionOffsets": [
+    0,
+    0
+  ],
+  "cameraOffsets": [
+    0,
+    0
+  ],
+  "animations": []
+}

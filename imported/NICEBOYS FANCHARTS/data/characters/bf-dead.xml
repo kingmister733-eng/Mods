@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-character>
+<character x="-200" y="-200" sprite="dead-bf" flipX="true" camx="200" isPlayer="true" icon="QT" color="#FF8CB5" applyStageMatrix="true">
+	<anim name="deathLoop" anim="Animations/Death Loop" loop="true"/>
+	<anim name="firstDeath" anim="Animations/Death Intro"/>
+	<anim name="deathConfirm" anim="Animations/Death Confirm ENG 1"/>
+</character>

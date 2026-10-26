@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<character flipX="true" isPlayer="true" icon="QT" applyStageMatrix="true" camx="-400" camy="-300">
+	<anim name="idle" anim="idle pose"/>
+	<anim name="singDOWN" anim="down pose"/>
+	<anim name="singRIGHT" anim="RIGHT POSE" x="-75" y="15"/>
+	<anim name="singLEFT" anim="LEFT POSE" x="25" y="15"/>
+	<anim name="singUP" anim="UP POSE" x="-20" y="24"/>
+	<anim name="singDOWNmiss" anim="DOWN POSE MISS" y="6"/>
+	<anim name="singLEFTmiss" anim="LEFT MISS POSE" x="20" y="25"/>
+	<anim name="singUPmiss" anim="UP MISS POSE" x="-25" y="30"/>
+	<anim name="hey!" anim="hey" x="5"/>
+	<anim name="singRIGHTmiss" anim="RIGHT MISS POSE" x="-85" y="24"/>
+</character>

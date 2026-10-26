@@ -1,0 +1,4 @@
+<!DOCTYPE codename-engine-character>
+<character isPlayer="true" icon="QT" color="#FF8CB5" applyStageMatrix="true">
+	<anim name="idle" anim="QT Dance - Gangnam Peak" fps="18" loop="true"/>
+</character>

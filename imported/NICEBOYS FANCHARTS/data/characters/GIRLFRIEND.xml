@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-character>
+<character icon="GF" color="#000000" applyStageMatrix="true">
+	<anim name="danceLeft" anim="GF idle" indices="1..11"/>
+	<anim name="singDOWN" anim="GF singDOWN"/>
+	<anim name="singRIGHT" anim="GF singRIGHT"/>
+	<anim name="singLEFT" anim="GF singLEFT"/>
+	<anim name="singUP" anim="GF singUP"/>
+	<anim name="danceRight" anim="GF idle" indices="12..25"/>
+	<anim name="HEY" anim="GF hey"/>
+	<anim name="scared" anim="GF scared"/>
+	<anim name="combo" anim="GF 200combo"/>
+	<anim name="sad" anim="GF sad"/>
+</character>

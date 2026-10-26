@@ -1,0 +1,59 @@
+<!DOCTYPE codename-engine-character>
+<character flipX="true" isPlayer="true" icon="BF" color="#30B0D1">
+	<anim name="idle old" anim="BFCOOLIDLE" x="54" y="8"/>
+	<anim name="singDOWN old" anim="BF ALT DOWN" x="-25" y="-35"/>
+	<anim name="singRIGHT old" anim="BF ALT RIGHT" x="-32" y="1"/>
+	<anim name="singLEFT old" anim="BF ALT LEFT" x="30" y="10"/>
+	<anim name="singUP old" anim="BF ALT UP" x="-20" y="40"/>
+	<anim name="burp no talk" anim="burp0" x="-2" y="3"/>
+	<anim name="BF dab" anim="BF dab" x="-35" y="-39"/>
+	<anim name="BF hit " anim="BF hit 0" x="10" y="15"/>
+	<anim name="HEY" anim="BF HEY!!" y="8"/>
+	<anim name="HEY ALT" anim="BF LOL!!" x="-1" y="8"/>
+	<anim name="look at this" anim="BF point" x="42" y="1"/>
+	<anim name="wtf" anim="BF shock" x="-44" y="2"/>
+	<anim name="singUP-sigh" anim="BF BLT UP" x="-55" y="28"/>
+	<anim name="singUP-alt" anim="BF CLT UP" x="-60" y="35"/>
+	<anim name="middle finger" anim="BF FINGER" x="99" y="133"/>
+	<anim name="singUP-cooler" anim="BF XLT UP" x="-38" y="18"/>
+	<anim name="singUP-cool" anim="BF YLT UP" x="-41" y="19"/>
+	<anim name="singUP-yeah" anim="BF ZLT UP" x="-44" y="23"/>
+	<anim name="burp talk" anim="burp talk" x="-2" y="1"/>
+	<anim name="BF hit alt" anim="BF hit alt" x="-5" y="-40"/>
+	<anim name="singDOWN" anim="BF BLT DOWN" x="-8" y="-57"/>
+	<anim name="singLEFT" anim="BF BLT LEFT" x="20" y="-7"/>
+	<anim name="singDOWN-yeah" anim="BF CLT DOWN" x="-24" y="-62"/>
+	<anim name="singLEFT-yeah" anim="BF CLT LEFT" x="20" y="-11"/>
+	<anim name="singDOWN-alt" anim="BF XLT DOWN" x="-3" y="-61"/>
+	<anim name="singLEFT-alt" anim="BF XLT LEFT" x="20" y="-8"/>
+	<anim name="singDOWN-cool" anim="BF YLT DOWN" x="-20" y="-69"/>
+	<anim name="singLEFT-cool" anim="BF YLT LEFT" x="20" y="-5"/>
+	<anim name="singDOWN-sigh" anim="BF ZLT DOWN" x="-31" y="-57"/>
+	<anim name="singLEFT-sigh" anim="BF ZLT LEFT" x="26" y="-5"/>
+	<anim name="singRIGHT" anim="BF BLT RIGHT" x="-54" y="-1"/>
+	<anim name="singRIGHT-lesscool" anim="BF CLT RIGHT" x="-55" y="-3"/>
+	<anim name="singRIGHT-cool" anim="BF XLT RIGHT" x="-51" y="-7"/>
+	<anim name="singRIGHT-sigh" anim="BF YLT RIGHT" x="-26" y="-27"/>
+	<anim name="singRIGHT-alt" anim="BF ZLT RIGHT" x="-50" y="-8"/>
+	<anim name="singUP-btx" anim="BF BEATBOX UP" x="-36" y="26"/>
+	<anim name="idle" anim="BF idle dance"/>
+	<anim name="bf pre attack" anim="bf pre attack" x="-39" y="-50"/>
+	<anim name="blissful burp" anim="blissful burp" x="2" y="17"/>
+	<anim name="BF BEATBOX DOWN" anim="BF BEATBOX DOWN" x="-5" y="-55"/>
+	<anim name="BF BEATBOX LEFT" anim="BF BEATBOX LEFT" x="59" y="-6"/>
+	<anim name="scared" anim="BF idle shaking"/>
+	<anim name="DODGE" anim="boyfriend dodge0" x="-24" y="-22"/>
+	<anim name="singUPmiss" anim="BF NOTE UP MISS" x="-53" y="28"/>
+	<anim name="BF BEATBOX RIGHT" anim="BF BEATBOX RIGHT" x="-55" y="-8"/>
+	<anim name="boyfriend attack" anim="boyfriend attack" x="287" y="272"/>
+	<anim name="singDOWNmiss" anim="BF NOTE DOWN MISS" x="-35" y="-44"/>
+	<anim name="singLEFTmiss" anim="BF NOTE LEFT MISS" x="-1" y="-7"/>
+	<anim name="boyfriend dodge up" anim="boyfriend dodge up" x="-14" y="-10"/>
+	<anim name="singRIGHTmiss" anim="BF NOTE RIGHT MISS" x="-53" y="-2"/>
+	<anim name="YAY" anim="Boyfriend YEAH cheer" x="-17" y="4"/>
+	<anim name="boyfriend dodge left" anim="boyfriend dodge left" x="7" y="-55"/>
+	<anim name="dodgeDOWN" anim="boyfriend dodge down 0" x="66" y="-57"/>
+	<anim name="dodgeRIGHT" anim="boyfriend dodge right" x="-57" y="-45"/>
+	<anim name="dodgeDOWN-alt" anim="boyfriend dodge down alt" x="-54" y="-50"/>
+	<anim name="singUP" anim="BF NOTE UP0" x="-35" y="30"/>
+</character>

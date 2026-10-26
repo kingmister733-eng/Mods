@@ -1,0 +1,102 @@
+Control Character.hx________PACKSEP________function onEvent(event) {
+    if (event.event.name == "Control Character") {
+
+        var target = strumLines.members[event.event.params[0]].characters[event.event.params[1]];
+
+        var xPos:Float = event.event.params[2];
+        var yPos:Float = event.event.params[3];
+        var alpha:Float = event.event.params[4];
+
+        var moveMode:String = event.event.params[5];
+        var doTween:Bool = event.event.params[6];
+        var tweenTime:Float = event.event.params[7];
+
+        var flipX:Bool = event.event.params[8];
+        var flipY:Bool = event.event.params[9];
+        var angle:Float = event.event.params[10];
+
+        // Aplicar alpha
+        target.alpha = alpha;
+
+        // Aplicar flip y rotación
+        target.flipX = flipX;
+        target.flipY = flipY;
+        target.angle = angle;
+
+        // Calcular posiciones finales
+        if(moveMode != "Dont Move"){
+        var finalX = (moveMode == "Absolute") ? xPos : target.x + xPos;
+        var finalY = (moveMode == "Absolute") ? yPos : target.y + yPos;
+        
+
+        if (doTween) {
+            FlxTween.tween(target, {x: finalX, y: finalY}, tweenTime);
+        } else {
+            target.x = finalX;
+            target.y = finalY;
+        }
+    }
+}
+
+
+}
+________PACKSEP________{
+  "params": [
+    {
+      "name": "StrumLine Index",
+      "type": "StrumLine",
+      "defaultValue": "0"
+    },
+        {
+      "name": "Character in strumline",
+      "type": "Float(0, 100, 1, 2)",
+      "defaultValue": "0"
+    },
+    {
+      "name": "X Position",
+      "type": "Float(-10000, 10000, 1, 2)",
+      "defaultValue": "0"
+    },
+    {
+      "name": "Y Position",
+      "type": "Float(-10000, 10000, 1, 2)",
+      "defaultValue": "0"
+    },
+    {
+      "name": "Alpha",
+      "type": "Float(0, 1, 0.01, 2)",
+      "defaultValue": "1"
+    },
+    {
+      "name": "Move Mode",
+      "type": "DropDown('Dont Move','Absolute', 'Relative')",
+      "defaultValue": "Dont Move"
+    },
+    {
+      "name": "Tween?",
+      "type": "Bool",
+      "defaultValue": "false"
+    },
+    {
+      "name": "Tween Time",
+      "type": "Float(0, 100, 0.1, 2)",
+      "defaultValue": "1"
+    },
+    {
+      "name": "Flip X",
+      "type": "Bool",
+      "defaultValue": "false"
+    },
+    {
+      "name": "Flip Y",
+      "type": "Bool",
+      "defaultValue": "false"
+    },
+    {
+      "name": "Angle",
+      "type": "Float(-360, 360, 1, 2)",
+      "defaultValue": "0"
+    }
+  ]
+}
+________PACKSEP________iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAB2lBMVEVHcEwAAgQEFxoEDREXFx0DJioFMDIQSUQLPzwSTUQfaE0gdkkeY04KPDoBJSgHOzoQTEUifkgeZk8PSUceZE4RS0gfiT4mek4jdkslhUcmjEUfd0gheUgnhUs0slgbh0AiiUQbgz4ljkUbbEUcb0dOwnErn1Adijwdizwdhj4glUcsbVoabUQbfUQZe0AYbUYfg0YWZEYgg0g/uWErqVIvcVwkkUEejUEdhz8cikQlfEwkkkkbfD8hgUcsilgeeUUeb0krjVQdgEFFqHAdb0cZb0MffEpXvXg4rV4sh1UYbUUdtEodf0MdhT05kWFMyW4fpUAehEYXcT4abVAlhkYnj00XfD0XiD88nmQagj0RWUIQTkcVjz8RVUWs/7qu/77U//Ww/8Kz/8a9/9y1/8+u/8Sw/8y0/8rF/+a0/9a7/+O3/9PM/urP//CU/bu4/9jc//l6+56++ty2/9y8/+ys/sdu147B/96q8cbT+uiY8rWZ7LN05JJi3ISH7KSP5qtH+XEq/Vea3rav/NTN+OB19Zsn9ForvFZpyYldu4Qvz1ee/s5o/Im/8Niv5MRDyWmH2qDH/+s8nmRPsnkg1E116Z9+/a87/G2a/ccp4FlnzJgb41RL8YEXrksK6v4VAAAAXnRSTlMAAQMCBAYIEQ0PGB0dCgULFjEnHhUbSyIlLDBZRyb3rzh6QYpi/uhXXWPnQ2u8otHZPNL48zMyuaDLQd2HrvZRruyD/rl54/3545b+sYz4/vHCtfJu03jk9J1eOfWECLZfAwAAAl1JREFUOMutk2V7GkEUhVk3wuIeNIIkBOLunrorbFgWtyBxd6u7/ddOkj4lLeRLn575eN+ZuXfmHJHofwpCUAwIRaDKdbiKkKoUCpWUwpFK2yUkrZUZDQajTEOzaDkgoRi9erixufmaVa1jqDICpZh2h7mudn6+tq6zXs+QfxEwybQ7O1pWkhyX3DCZHXox+UcfCEvrHR0ti1yU56Pcislcr5Pil2aBqmhdvdm0nOJDQHxqvdWj1hKSUh1TVqs7W9dTfCQIFFmIrrl6LWL24hJwkITQ2K7XraYWgrMBvz8wG4nuvOpyymgM1BCwQIMWa89aMho5qwMimEgtm/rUWgoGh4tgEabUObtu5pKJ4C9gNsInV11WC42DzSJUhIu7PZOLHB8KCgH/xR2JN7naxgENCcHEOVDjfZ2NZhLhYlEIBIRiMRTjuY2hMXkJmHqZjefz6c10SBBCc6exfJx7ccNeAox9E7tc4eTTVjohCLG5rY+FVO5wvOE3QOvv3T9cKnz/tp+OhcOxuf3N+OJET2+3mIVgCoyJUhrb8NTR15kfXy6A9wdHj25bbdVKHEJw8FBnD2mzN90df3b8GQD5vZmHTdMGS7WShcEvnn8VTmt9T55Pe49P+EwmvnfrcYNPzhCXfAVXKVWKpzWNBzvxOF/44HrgUxCs5LIzYRxnFUbPZC7Lcdl5b42chMtsiUhlY0PbS0u722/vGMV4BdNS2oHR/pF3I/1NDTIpVgEApjHYB0cH7QYZQ1RwNbA1rW1zu91tcjGBV4oOhLFnwVFJCRJDrooejKIofFXy/lU/Afwth7nKGSNzAAAAAElFTkSuQmCC

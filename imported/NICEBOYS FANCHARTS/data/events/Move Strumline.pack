@@ -1,0 +1,126 @@
+Move Strumline.hx________PACKSEP________import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
+
+function onEvent(event)
+{
+    if (event.event.name == "Move Strumline")
+    {
+        var targetStrumline = strumLines.members[event.event.params[0]];
+
+        var xPos:Float = event.event.params[1];
+        var yPos:Float = event.event.params[2];
+        var alpha:Float = event.event.params[3];
+
+        var moveMode:String = event.event.params[4];
+        var doTween:Bool = event.event.params[5];
+        var tweenTime:Float = event.event.params[6];
+
+        var tweenType:String = event.event.params[7];
+        var tweenDirection:String = event.event.params[8];
+
+        var flipX:Bool = event.event.params[9];
+        var flipY:Bool = event.event.params[10];
+        var angle:Float = event.event.params[11];
+
+        var chosenEase = CoolUtil.flxeaseFromString(tweenType, tweenDirection);
+
+        for(note in targetStrumline.members)
+        {
+            note.alpha = alpha;
+
+            note.flipX = flipX;
+            note.flipY = flipY;
+
+            note.angle = angle;
+
+            if(moveMode != "Dont Move")
+            {
+                var finalX = (moveMode == "Absolute") ? xPos : note.x + xPos;
+                var finalY = (moveMode == "Absolute") ? yPos : note.y + yPos;
+
+                if (doTween)
+                {
+                    FlxTween.cancelTweensOf(note);
+
+                    FlxTween.tween(note,
+                    {
+                        x: finalX,
+                        y: finalY
+                    },
+                    tweenTime,
+                    {
+                        ease: chosenEase
+                    });
+                }
+                else
+                {
+                    note.x = finalX;
+                    note.y = finalY;
+                }
+            }
+        }
+    }
+}________PACKSEP________{
+  "params": [
+    {
+      "name": "StrumLine Index",
+      "type": "StrumLine",
+      "defaultValue": "0"
+    },
+    {
+      "name": "X Position",
+      "type": "Float(-10000, 10000, 1, 2)",
+      "defaultValue": "0"
+    },
+    {
+      "name": "Y Position",
+      "type": "Float(-10000, 10000, 1, 2)",
+      "defaultValue": "0"
+    },
+    {
+      "name": "Alpha",
+      "type": "Float(0, 1, 0.01, 2)",
+      "defaultValue": "1"
+    },
+    {
+      "name": "Move Mode",
+      "type": "DropDown('Dont Move','Absolute', 'Relative')",
+      "defaultValue": "Dont Move"
+    },
+    {
+      "name": "Tween?",
+      "type": "Bool",
+      "defaultValue": "false"
+    },
+    {
+      "name": "Tween Time",
+      "type": "Float(0, 100, 0.1, 2)",
+      "defaultValue": "1"
+    },
+    {
+      "name": "Tween Type",
+      "type": "DropDown(['CLASSIC', 'linear', 'back', 'bounce', 'circ', 'cube', 'elastic', 'expo', 'quad', 'quart', 'quint', 'sine', 'smoothStep', 'smootherStep'])",
+      "defaultValue": "CLASSIC"
+    },
+    {
+      "name": "Tween Direction",
+      "type": "DropDown(['In', 'Out', 'InOut'])",
+      "defaultValue": "In"
+    },
+    {
+      "name": "Flip X",
+      "type": "Bool",
+      "defaultValue": "false"
+    },
+    {
+      "name": "Flip Y",
+      "type": "Bool",
+      "defaultValue": "false"
+    },
+    {
+      "name": "Angle",
+      "type": "Float(-360, 360, 1, 2)",
+      "defaultValue": "0"
+    }
+  ]
+}________PACKSEP________iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAZkSURBVEhL7VbLb1RVGD/3Nbczd+bOo/OizLPtlEJLeZZEQCBIIht14QJNMCbGjX+ACx8LjQvjwoX+Ay4McaGufJCAIBBBSgutpU5pp51O59V5Me087p3HffmdUoZOC5WIO/0lv9zk3HPP73zf+X3fueg/B2Lt+ayggTagHegEUsAUcAlYAm7CPxFmgZ1AB3A7z/Pdfn+wy+52WXneajKYeaOqyOTi3OxKMpGYTMbjt2HeFaAGbOFphfE8hmVZbzAYdOr0er+qkQENqTtoRrfP3tnZ3elwGcy2TspityNNVdH8vbCWWFj4YykV/yWVSHwK3y8DW+JPK6wDuhmG+XJw9+6j/t6Qpcvrpzzdvcjh8SKhLqOmLCMFBB/CwOpQcjaMYtNT0W/Pff0+DH0PlFdfAp5W2AI89t5Hn5zjPUEOYic02DxBkIggSaRpbVlsoYMmUbmQW/n8g3evwZG8lkwma2uvELn2/DtgsxghHlojSNDDgjBEEE8UxZDhlaQR+kAgMGCz2dq0thLGJvK6XK4Bv79nyO3uCkqNBoHTKUNa66KAirkskqXmE8UVVUOKotA6lnU2m80OGGpleCthrruvz+/t6enf5vP2dbrcznwuS+bSSZSOL6jxuVk1Ov0nkhp1sMyTo1Y1Dc4CGQRBwIG09HD9PQnuM2ff9Dg8AaPQbNJjN66Lv125rIn180gUqs1mvS6TJGns6+9HrN4AoWyOAU4CxjUCoiXL5TIWbkWMz2498Au8Ak5LcM/BQ36FIC2SRnc4uzwyy3ELvbsGRxu1Wp0zGPmXXj9rdAVDiKQev38KfFCvVrWpkeuqJEmfQdQCDK+mZ/02CavVyodCoW2vnDnjGhgaMvEWK8uZbZSB50nWxGu+HbvSsciM02K1egcPDnf6+3e3iTZrIpq/O47UtbKCjIA4qdZqNRGE4Uwe1XHbVoeGhhiW5/U9e4bJfLGkJRNJgljKEjVYqCGIajaVMDfFaqhn54Az0LeTYSDFD1HMpFEmEUNz4Snk7x9cEyUQTRGKKIrLNE0rMK0l3BYxtrzL5yPt27uRxeGsp1MpcT4yI8xPTQqTt67Ls+OjPovF6nF7/Sb7du/aZ1AyYLBMMi7NTU020ok4eO1BxGsHqkDEy/l8/lF3AWx2RLmx+th/5IU8Y+RmOLN5kuP5aQJRgo6hDx85ddoU7NvZZuR8YhEt3Avfj81HUgYDByMPJFUoO1WSJYgYXxZt1m8TzmQyqFApINRoQNpSiiYxmVRsDpXuF1yHDj9nk2CR4mJEU4US4vTYfwhViwU0cvVSQhSFW70Du29C+Cg+MYJid35H45fPo9tXLwpQ5/iiaIu4ZW8MaGs2giB4k91OqzXUqFbz7u6BgV5PMLT9wNGTuqk7t31zEyPH3W6X1+MPcF2+ILrw8081q9P9o8vrn9FzeiG3ON8Vvj3apGg2q0J3aTTrpWgk8issnwC2xNuEAbjWHha6EVrdgb1HT3gDOwd5B4gIlQpz5+rFbrFY8CNVsTM6HZvJFtL7jh0f6/J1L8HtJUqVZfKLjz/MwLlOwxq4NzeBONXYXC1sPGN8wBVg1Ww205zFYre5XJwnEFx9yZlM0qFTp2eNdtd4Kp0ZG7lxfZQzWybMJkuJpihZhf5IUVRNo+k0TI8Bo8AksE0UY7O5HoyZdu3aayQoHa2DS6gDRnB5YJRzeQ1E5sw2x4X9x05+5XI604pQloVsCq2k49rM+BiiVLUMUzeJrcfGVDO23l693253vvzWO+TkrTFbci7cw1Bk1/MnTkJm9eiH775pQNefHT724qLF7ZYnb1xzxu5N6Iq5nFAqlQTwiAwNKgJr4RS3OXk9NrZMg8/hML36xtssy9uRtdPeZHQdZUWVl2emJtGNq5dK2cxSzB0M5fYdOSHCTjQn1Ht8frpSF4RUoVBIQYcqwjpbimJsFGbA2fCLY+gI9YcQo+c1ju2QFKVRvzt6s7IYiUShNlccjm11htQ0MZvWKvfz6nw4UltezpfBULgXt/4ytsKmSwJqjqys3Nf19fSRdbjFG9WCVi5XmuGxmwVoBHGO4xSWQopULSmlYk5NxaPK7Gy4BmnGvfipRDE2njEGdpEBXO0cHh6mKpUKgnbXiEajuCSk1RmPgL/HbGsOzwK8GAV/H7j/4ZsA/+z9q3hcxOvxsNywUbY0y//YGgj9BeQ7zZAio4QnAAAAAElFTkSuQmCC

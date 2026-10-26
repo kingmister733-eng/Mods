@@ -1,0 +1,15 @@
+{
+  "title": "niceboys fancharts songpack 1",
+  "description": "Converted from Psych Engine using FNFCOV Mod Converter.",
+  "homepage": "",
+  "contributors": [
+    {
+      "name": "Psych Engine Modder",
+      "role": "Creator"
+    }
+  ],
+  "author": "Psych Engine Modder",
+  "api_version": "0.8.0",
+  "mod_version": "1.0.0",
+  "license": "Apache 2.0"
+}
